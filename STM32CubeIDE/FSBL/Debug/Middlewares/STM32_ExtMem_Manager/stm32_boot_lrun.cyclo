@@ -1,0 +1,6 @@
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:60:20:BOOT_Application	3
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:91:20:MapMemory	5
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:128:20:CopyApplication	6
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:207:20:JumpToApplication	5
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:267:17:BOOT_GetApplicationSize	1
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.c:277:17:BOOT_GetApplicationVectorTable	2
