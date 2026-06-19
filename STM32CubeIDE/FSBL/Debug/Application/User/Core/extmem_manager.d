@@ -1,5 +1,5 @@
 Application/User/Core/extmem_manager.o: \
- C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/extmem_manager.c \
+ C:/n6-dk/STM32N6-Blink/FSBL/Core/Src/extmem_manager.c \
  ../../../FSBL/Core/Inc/extmem_manager.h \
  ../../../FSBL/Core/Inc/stm32_extmem_conf.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h \

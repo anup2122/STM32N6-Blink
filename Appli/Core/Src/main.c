@@ -118,6 +118,24 @@ int main(void)
 }
 
 /**
+  * @brief Peripherals Common Clock Configuration
+  * @retval None
+  */
+void PeriphCommonClock_Config(void)
+{
+  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
+
+  /** Initializes the peripherals clock
+  */
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_CKPER;
+  PeriphClkInitStruct.CkperClockSelection = RCC_CLKPCLKSOURCE_HSI;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
   * @brief CACHEAXI Initialization Function
   * @param None
   * @retval None
@@ -248,11 +266,10 @@ static void MX_RAMCFG_Init(void)
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF12, RISAF_REGION_2, &risaf_base_config);
 
   /* set up base region configuration for CPUAXI_RAM1*/
-  /* region 1 is non-secure */
+  /* region 1 is secure */
   risaf_base_config.EndAddress = 0xfffff;
   risaf_base_config.Filtering = RISAF_FILTER_ENABLE;
   risaf_base_config.WriteWhitelist = 255;
-  risaf_base_config.Secure = RIF_ATTRIBUTE_NSEC;
   risaf_base_config.StartAddress = 0x0000;
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF3, RISAF_REGION_1, &risaf_base_config);
 
@@ -260,7 +277,6 @@ static void MX_RAMCFG_Init(void)
   /* region 1 is secure */
   risaf_base_config.EndAddress = 0xfffffff;
   risaf_base_config.Filtering = RISAF_FILTER_DISABLE;
-  risaf_base_config.Secure = RIF_ATTRIBUTE_SEC;
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF11, RISAF_REGION_1, &risaf_base_config);
 
   /* set up base region configuration for CPUAXI_RAM0*/

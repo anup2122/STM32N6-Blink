@@ -1,5 +1,5 @@
 Application/User/Core/stm32n6xx_it.o: \
- C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_it.c \
+ C:/n6-dk/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_it.c \
  ../../../FSBL/Core/Inc/main.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h \
  ../../../FSBL/Core/Inc/stm32n6xx_hal_conf.h \

@@ -5,10 +5,10 @@
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1891:22:LL_AHB5_GRP1_DisableClock	1
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:2909:22:LL_APB2_GRP1_EnableClock	1
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:2997:22:LL_APB2_GRP1_DisableClock	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:63:6:HAL_MspInit	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:95:6:HAL_CACHEAXI_MspInit	2
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:118:6:HAL_CACHEAXI_MspDeInit	2
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:140:6:HAL_RAMCFG_MspInit	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:159:6:HAL_RAMCFG_MspDeInit	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:178:6:HAL_UART_MspInit	3
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:235:6:HAL_UART_MspDeInit	2
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:62:6:HAL_MspInit	1
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:94:6:HAL_CACHEAXI_MspInit	2
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:117:6:HAL_CACHEAXI_MspDeInit	2
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:139:6:HAL_RAMCFG_MspInit	1
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:158:6:HAL_RAMCFG_MspDeInit	1
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:177:6:HAL_UART_MspInit	3
+C:/n6-dk/STM32N6-Blink/Appli/Core/Src/stm32n6xx_hal_msp.c:234:6:HAL_UART_MspDeInit	2
