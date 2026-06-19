@@ -25,6 +25,7 @@ Application/User/Core/extmem_manager.o: \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_bsec.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h \
@@ -61,6 +62,7 @@ Application/User/Core/extmem_manager.o: \
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_bsec.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h:

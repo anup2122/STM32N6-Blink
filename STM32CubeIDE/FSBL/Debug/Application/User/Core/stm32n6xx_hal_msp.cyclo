@@ -2,5 +2,5 @@
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1755:22:LL_AHB5_GRP1_EnableClock	1
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1891:22:LL_AHB5_GRP1_DisableClock	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_hal_msp.c:63:6:HAL_MspInit	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_hal_msp.c:93:6:HAL_XSPI_MspInit	7
-C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_hal_msp.c:226:6:HAL_XSPI_MspDeInit	5
+C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_hal_msp.c:97:6:HAL_XSPI_MspInit	7
+C:/AI2026Q2/anup2122/STM32N6-Blink/FSBL/Core/Src/stm32n6xx_hal_msp.c:230:6:HAL_XSPI_MspDeInit	5

@@ -1,6 +1,12 @@
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1165:22:LL_AHB3_GRP1_EnableClock	24	static
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1407:22:LL_AHB4_GRP1_EnableClock	24	static
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:64:5:main	8	static
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:107:15:SystemIsolation_Config	8	static
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:167:13:MX_GPIO_Init	32	static
-C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:200:6:Error_Handler	4	static,ignoring_inline_asm
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:78:5:main	8	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:125:13:MX_CACHEAXI_Init	8	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:151:13:MX_RAMCFG_Init	8	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:220:15:SystemIsolation_Config	40	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:335:13:MX_SAU_Init	4	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:356:13:MX_USART1_UART_Init	8	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:404:13:MX_GPIO_Init	32	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:432:1:__io_putchar	16	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:437:5:_write	24	static
+C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/main.c:447:6:Error_Handler	4	static,ignoring_inline_asm

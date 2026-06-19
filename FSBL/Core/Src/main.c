@@ -55,6 +55,7 @@ static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_XSPI1_Init(void);
 static void MX_XSPI2_Init(void);
+static void MX_BSEC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -90,7 +91,9 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  /* Overdrive mode selection pin must be set high before configuring the system clock*/
+  MX_GPIO_Init();
+  HAL_Delay(1);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -104,9 +107,10 @@ int main(void)
   MX_GPIO_Init();
   MX_XSPI1_Init();
   MX_XSPI2_Init();
+  MX_BSEC_Init();
   MX_EXTMEM_MANAGER_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
   /* Launch the application */
@@ -121,6 +125,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }
@@ -250,6 +255,27 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief BSEC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_BSEC_Init(void)
+{
+
+  /* USER CODE BEGIN BSEC_Init 0 */
+
+  /* USER CODE END BSEC_Init 0 */
+
+  /* USER CODE BEGIN BSEC_Init 1 */
+
+  /* USER CODE END BSEC_Init 1 */
+  /* USER CODE BEGIN BSEC_Init 2 */
+
+  /* USER CODE END BSEC_Init 2 */
+
+}
+
+/**
   * @brief XSPI1 Initialization Function
   * @param None
   * @retval None
@@ -372,8 +398,15 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOP_CLK_ENABLE();
   __HAL_RCC_GPIOO_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
+  __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPION_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_4, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : I2C1_SDA_Pin */
   GPIO_InitStruct.Pin = I2C1_SDA_Pin;
@@ -433,14 +466,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF14_LCD;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : VCP_TX_Pin VCP_RX_Pin */
-  GPIO_InitStruct.Pin = VCP_TX_Pin|VCP_RX_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-
   /*Configure GPIO pin : I2C1_SCL_Pin */
   GPIO_InitStruct.Pin = I2C1_SCL_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
@@ -497,6 +522,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF6_SAI1;
   HAL_GPIO_Init(SAI1_MCLK_A_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PF4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
   /*Configure GPIO pins : LCD_B3_Pin LCD_B0_Pin LCD_G1_Pin LCD_R0_Pin
                            LCD_G0_Pin LCd_G7_Pin LCD_DE_Pin LCD_R6_Pin */
   GPIO_InitStruct.Pin = LCD_B3_Pin|LCD_B0_Pin|LCD_G1_Pin|LCD_R0_Pin
@@ -517,11 +549,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF14_LCD;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : UCPD1_VSENSE_Pin */
-  GPIO_InitStruct.Pin = UCPD1_VSENSE_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  /*Configure GPIO pin : RED_LED_Pin */
+  GPIO_InitStruct.Pin = RED_LED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(UCPD1_VSENSE_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(RED_LED_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PA8 */
   GPIO_InitStruct.Pin = GPIO_PIN_8;

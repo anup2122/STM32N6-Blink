@@ -1,3 +1,4 @@
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:3515:26:LL_APB4_GRP2_IsEnabledClock	2
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:132:19:HAL_Init	2
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:160:19:HAL_DeInit	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:201:13:HAL_MspInit	1
@@ -13,7 +14,7 @@ C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_ha
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:420:13:HAL_ResumeTick	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:430:10:HAL_GetHalVersion	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:443:10:HAL_GetREVID	1
-C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:461:10:HAL_GetDEVID	1
+C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:461:10:HAL_GetDEVID	3
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:490:10:HAL_GetUIDw0	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:500:10:HAL_GetUIDw1	1
 C:/AI2026Q2/anup2122/STM32N6-Blink/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c:510:10:HAL_GetUIDw2	1

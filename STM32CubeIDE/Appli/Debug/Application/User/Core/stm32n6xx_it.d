@@ -24,10 +24,14 @@ Application/User/Core/stm32n6xx_it.o: \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rif.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cacheaxi.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_ramcfg.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h \
  ../../../Appli/Core/Inc/stm32n6xx_it.h
 ../../../Appli/Core/Inc/main.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h:
@@ -53,8 +57,12 @@ Application/User/Core/stm32n6xx_it.o: \
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rif.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cacheaxi.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_ramcfg.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h:
 ../../../Appli/Core/Inc/stm32n6xx_it.h:

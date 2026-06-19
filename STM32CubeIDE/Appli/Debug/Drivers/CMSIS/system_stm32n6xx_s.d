@@ -23,10 +23,14 @@ Drivers/CMSIS/system_stm32n6xx_s.o: \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rif.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cacheaxi.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_ramcfg.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h \
+ ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h \
  ../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/partition_stm32n6xx.h \
  ../../../Appli/Core/Inc/partition_stm32n657xx.h
 ../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n6xx.h:
@@ -52,9 +56,13 @@ Drivers/CMSIS/system_stm32n6xx_s.o: \
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rif.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cacheaxi.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_cortex.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_exti.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_ramcfg.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h:
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h:
 ../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/partition_stm32n6xx.h:
 ../../../Appli/Core/Inc/partition_stm32n657xx.h:
