@@ -1,0 +1,5 @@
+				size		start address
+
+RISAF 7 secure for FLEXRAM:     0x64000		0x34000000       (400KB)
+RISAF 2 secure for AXISRAM0:    0x9C000		0x34064000       (624KB)
+RISAF 3 nonsecure for AXISRAM1: 0x100000	0x34100000       (1MB)	(= 0x34064000 + 0x9C000)

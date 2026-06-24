@@ -1,5 +1,5 @@
 Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o: \
- C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/user/stm32_user_driver.c \
+ C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/user/stm32_user_driver.c \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.h \
  ../../../FSBL/Core/Inc/stm32_extmem_conf.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h \

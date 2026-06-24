@@ -1,5 +1,5 @@
 Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o: \
- C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi.c \
+ C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi.c \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.h \
  ../../../FSBL/Core/Inc/stm32_extmem_conf.h \
  ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h \
@@ -35,8 +35,8 @@ Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o: \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.h \
- C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h \
- C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_api.h
+ C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h \
+ C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_api.h
 ../../../Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.h:
 ../../../FSBL/Core/Inc/stm32_extmem_conf.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h:
@@ -72,5 +72,5 @@ Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o: \
 ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_lrun.h:
-C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h:
-C:/n6-dk/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_api.h:
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h:
+C:/AI2026Q2/anup2122/STM32N6-Blink/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_api.h:

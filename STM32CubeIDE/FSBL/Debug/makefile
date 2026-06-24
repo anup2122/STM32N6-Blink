@@ -66,8 +66,8 @@ all:
 main-build: STM32N6-Blink_FSBL.elf secondary-outputs
 
 # Tool invocations
-STM32N6-Blink_FSBL.elf STM32N6-Blink_FSBL.map: $(OBJS) $(USER_OBJS) C:\n6-dk\STM32N6-Blink\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32N6-Blink_FSBL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m55 -T"C:\n6-dk\STM32N6-Blink\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6-Blink_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32N6-Blink_FSBL.elf STM32N6-Blink_FSBL.map: $(OBJS) $(USER_OBJS) C:\AI2026Q2\anup2122\STM32N6-Blink\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32N6-Blink_FSBL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m55 -T"C:\AI2026Q2\anup2122\STM32N6-Blink\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6-Blink_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -92,7 +92,7 @@ clean:
 	-@echo ' '
 
 post-build:
-	cd "C:/n6-dk/STM32N6-Blink/STM32CubeIDE/FSBL/Debug"
+	cd "C:/AI2026Q2/anup2122/STM32N6-Blink/STM32CubeIDE/FSBL/Debug"
 	echo y | "C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6-Blink_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6-Blink_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6-Blink_FSBL-Trusted.bin" -align
 	-@echo ' '
 

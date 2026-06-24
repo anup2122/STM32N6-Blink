@@ -245,44 +245,63 @@ static void MX_RAMCFG_Init(void)
   /* set all required IPs as secure privileged */
   __HAL_RCC_RIFSC_CLK_ENABLE();
 
+  /*RISUP configuration*/
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_NPU , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+
   /* RISAF Config */
   RISAF_BaseRegionConfig_t risaf_base_config;
   __HAL_RCC_RISAF_CLK_ENABLE();
 
-  /* set up base region configuration for XSPI2*/
+  /* Enable NPU Clock */
+  __HAL_RCC_NPU_CLK_ENABLE();
+  __HAL_RCC_NPU_FORCE_RESET();
+  __HAL_RCC_NPU_RELEASE_RESET();
+
+  __HAL_RCC_AXISRAM4_MEM_CLK_ENABLE();
+  CLEAR_BIT(RAMCFG_SRAM4_AXI->CR, RAMCFG_CR_SRAMSD);
+  __HAL_RCC_AXISRAM5_MEM_CLK_ENABLE();
+  CLEAR_BIT(RAMCFG_SRAM5_AXI->CR, RAMCFG_CR_SRAMSD);
+  __HAL_RCC_AXISRAM6_MEM_CLK_ENABLE();
+  CLEAR_BIT(RAMCFG_SRAM6_AXI->CR, RAMCFG_CR_SRAMSD);
+
+  /* set up base region configuration for NPU_master0*/
   /* region 1 is secure */
-  risaf_base_config.EndAddress = 0xfffffff;
-  risaf_base_config.Filtering = RISAF_FILTER_DISABLE;
+  risaf_base_config.EndAddress = 0x6ffff;
+  risaf_base_config.Filtering = RISAF_FILTER_ENABLE;
   risaf_base_config.ReadWhitelist = 255;
-  risaf_base_config.WriteWhitelist = RIF_CID_NONE;
+  risaf_base_config.WriteWhitelist = 255;
   risaf_base_config.Secure = RIF_ATTRIBUTE_SEC;
   risaf_base_config.PrivWhitelist = RIF_CID_NONE;
   risaf_base_config.StartAddress = 0x0000;
-  HAL_RIF_RISAF_ConfigBaseRegion(RISAF12, RISAF_REGION_1, &risaf_base_config);
+  HAL_RIF_RISAF_ConfigBaseRegion(RISAF4, RISAF_REGION_1, &risaf_base_config);
 
-  /* region 2 is secure */
-  risaf_base_config.EndAddress = 0x1fffffff;
-  risaf_base_config.StartAddress = 0x10000000;
-  HAL_RIF_RISAF_ConfigBaseRegion(RISAF12, RISAF_REGION_2, &risaf_base_config);
+  /* set up base region configuration for NPU_master1*/
+  /* region 1 is secure */
+  HAL_RIF_RISAF_ConfigBaseRegion(RISAF5, RISAF_REGION_1, &risaf_base_config);
+
+  /* set up base region configuration for XSPI2*/
+  /* region 1 is secure */
+  risaf_base_config.EndAddress = 0x6ffffff;
+  HAL_RIF_RISAF_ConfigBaseRegion(RISAF12, RISAF_REGION_1, &risaf_base_config);
 
   /* set up base region configuration for CPUAXI_RAM1*/
   /* region 1 is secure */
   risaf_base_config.EndAddress = 0xfffff;
-  risaf_base_config.Filtering = RISAF_FILTER_ENABLE;
-  risaf_base_config.WriteWhitelist = 255;
-  risaf_base_config.StartAddress = 0x0000;
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF3, RISAF_REGION_1, &risaf_base_config);
 
   /* set up base region configuration for XSPI1*/
   /* region 1 is secure */
-  risaf_base_config.EndAddress = 0xfffffff;
-  risaf_base_config.Filtering = RISAF_FILTER_DISABLE;
+  risaf_base_config.EndAddress = 0x1ffffff;
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF11, RISAF_REGION_1, &risaf_base_config);
+
+  /* set up base region configuration for CPU_master*/
+  /* region 1 is secure */
+  risaf_base_config.EndAddress = 0x6ffff;
+  HAL_RIF_RISAF_ConfigBaseRegion(RISAF6, RISAF_REGION_1, &risaf_base_config);
 
   /* set up base region configuration for CPUAXI_RAM0*/
   /* region 1 is secure */
   risaf_base_config.EndAddress = 0x9bfff;
-  risaf_base_config.Filtering = RISAF_FILTER_ENABLE;
   HAL_RIF_RISAF_ConfigBaseRegion(RISAF2, RISAF_REGION_1, &risaf_base_config);
 
   /* set up base region configuration for FLEXRAM*/

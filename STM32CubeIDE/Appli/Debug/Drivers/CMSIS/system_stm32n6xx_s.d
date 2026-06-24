@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32n6xx_s.o: \
- C:/n6-dk/STM32N6-Blink/Appli/Core/Src/system_stm32n6xx_s.c \
+ C:/AI2026Q2/anup2122/STM32N6-Blink/Appli/Core/Src/system_stm32n6xx_s.c \
  ../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n6xx.h \
  ../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n657xx.h \
  ../../../Drivers/CMSIS/Include/core_cm55.h \
